@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Shop | Fashion Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+
+    <header id="home">
+      <div class="top-bar">
+        <div class="container top-content">
+          <nav aria-label="Information">
+            <a href="#about">About Us</a>
+            <a href="#contact">Privacy</a>
+            <a href="#services">FAQ</a>
+            <a href="#news">Careers</a>
+          </nav>
+          <div class="top-right">
+            <a href="#trending">My Wishlist</a>
+            <a href="#bag">Track Your Order</a>
+            <div class="social-links">
+              <a href="#contact" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f icon" ></i>
+              </a>
+              <a href="#contact" aria-label="Instagram">
+                <i class="fa-brands fa-instagram icon" ></i>
+              </a>
+              <a href="#contact" aria-label="Youtube">
+                <i class="fa-brands fa-youtube icon" ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container main-header">
+        <a class="logo" href="#home">
+          <span class="logo-mark">
+            <img class="icon " src="images/shop.svg" alt="">
+          </span>
+          <span><strong>Capital</strong> Shop</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#categories">Men</a>
+          <a href="#trending">Women</a>
+          <a href="#categories">Baby Collection</a>
+          <div class="dropdown">
+            <button class="nav-button" type="button">Pages
+              <span class="down-chevron"></span>
+            </button>
+            <div class="dropdown-panel">
+              <div>
+                <p>Pages</p>
+                <a href="#account">Login</a>
+                <a href="#bag">Cart</a>
+                <a href="#preview-product-1">Product Details</a>
+                <a href="#bag">Product Checkout</a>
+              </div>
+              <div>
+                <p>Blog</p>
+                <a href="#news">Elements</a>
+                <a href="#news">Blog Details</a>
+              </div>
+            </div>
+          </div>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <a href="#search" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+          </a>
+          <a href="#account" aria-label="Account">
+            <i class="fa-solid fa-user icon"></i>
+          </a>
+          <a class="cart-link" href="#bag" aria-label="Shopping bag with 2 items">
+            <i class="fa-solid fa-shopping-cart icon"></i>
+            <span class="cart-count">2</span>
+          </a>
+        </div>
+      </div>
+      <div class="sale-bar">
+        Sale Up To 50% Biggest Discounts. Hurry! Limited Period Offer
+        <a href="#trending">Shop Now</a>
+      </div>
+    </header>
+    <main>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image">
+        </div>
+        <div class="container hero-layout">
+          <div class="hero-content">
+            <p class="sale-script">
+              Everyday Essentials
+            </p>
+            <h1 id="hero-title">
+              Simple Style, Every Day
+            </h1>
+            <p class="hero-description">
+              Discover easy-to-wear shirts, soft knits and everyday favourites
+              Comfortable pieces that work together, wherever your day takes you
+            </p>
+            <a class="shop-button" href="#trending">
+              SHOP MEN
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Category cards: zoom image and reveal Shop Now -->
+      <section class="container categories" id="categories" aria-label="Shop by category">
+        <a class="category-card" href="#trending">
+          <img src="images/category-men.png" alt="Men’s Fashion">
+          <div class="category-caption">
+            <h2>
+              Men’s Fashion
+            </h2>
+            <span>
+              Shop Now
+            </span>
+          </div>
+        </a>
+        <a class="category-card" href="#trending">
+          <img src="images/category-women.png" alt="Women’s Fashion">
+          <div class="category-caption">
+            <h2>
+              Women’s Fashion
+            </h2>
+            <span>
+              Shop Now
+            </span>
+          </div>
+        </a>
+        <a class="category-card" href="#trending">
+          <img src="images/category-baby.png" alt="Baby Fashion">
+          <div class="category-caption">
+            <h2>
+              Baby Fashion
+            </h2>
+            <span>
+              Shop Now
+            </span>
+          </div>
+        </a>
+      </section>
+      <section class="container trending section-space" id="trending" aria-labelledby="trending-title">
+        <div class="section-heading">
+          <h2 id="trending-title">Trending This Week</h2>
+
+          <div class="tabs">
+            <span class="active">Men</span>
+            <span>Women</span>
+            <span>Baby</span>
+            <span>Fashion</span>
+          </div>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-photo flip">
+              <div class="photo-inner">
+                <img class="photo-front" src="images/product-1.png" alt="Fashion product men0">
+                <img class="photo-back" src="images/product-2.png" alt="Alternative fashion product">
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input class="favorite-input" type="checkbox" id="favorite-men0">
+
+                <label for="favorite-men0" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-product-1" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-product-1">Classic Knit Sweater</a>
+            </h3>
+
+            <p class="price">
+              $49.99
+              <del>$65.00</del>
+            </p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo flip">
+              <div class="photo-inner">
+                <img class="photo-front" src="images/product-3.png" alt="Fashion product men1">
+                <img class="photo-back" src="images/product-4.png" alt="Alternative fashion product">
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input class="favorite-input" type="checkbox" id="favorite-men1">
+
+                <label for="favorite-men1" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-product-2" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-product-2">Charcoal Overshirt</a>
+            </h3>
+
+            <p class="price">
+              $69.99
+              <del>$89.00</del>
+            </p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo flip">
+              <div class="photo-inner">
+                <img class="photo-front" src="images/product-5.png" alt="Fashion product men2">
+                <img class="photo-back" src="images/product-6.png" alt="Alternative fashion product">
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input class="favorite-input" type="checkbox" id="favorite-men2">
+
+                <label for="favorite-men2" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-product-3" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-product-3">Classic Oxford Shirt</a>
+            </h3>
+
+            <p class="price">
+              $39.99
+              <del>$55.00</del>
+            </p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-photo flip">
+              <div class="photo-inner">
+                <img class="photo-front" src="images/product-7.png" alt="Fashion product men3">
+                <img class="photo-back" src="images/product-8.png" alt="Alternative fashion product">
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input class="favorite-input" type="checkbox" id="favorite-men3">
+
+                <label for="favorite-men3" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-product-5" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-product-5">Classic Polo Shirt</a>
+            </h3>
+
+            <p class="price">
+              $29.99
+              <del>$40.00</del>
+            </p>
+          </article>
+        </div>
+
+        <span class="catalog-arrow previous" aria-hidden="true"><i class="fa-solid fa-chevron-left icon"></i></span>
+        <span class="catalog-arrow next" aria-hidden="true"><i class="fa-solid fa-chevron-right icon"></i></span>
+      </section>
+      <!-- 6. Testimonial -->
+      <section class="testimonial" id="about">
+        <div class="container testimonial-content">
+          <h2>
+            Customer Testimonial
+          </h2>
+          <blockquote>
+            The sweater feels soft and fits just right
+            <br>
+            The colour looks exactly like the photos, and it’s easy to style
+          </blockquote>
+          <div class="customer">
+            <img src="images/customer.png" alt="Adam Wilson">
+            <div>
+              <h3>
+                Adam Wilson
+              </h3>
+              <p>
+                Customer
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container recommendations section-space" id="recommendations"
+      >
+        <h2>You May Like</h2>
+
+        <div class="product-grid">
+
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-photo slide">
+              <div class="photo-inner">
+                <img
+                  class="photo-front"
+                  src="images/im1.png"
+                  alt="First recommended product"
+                >
+
+                <img
+                  class="photo-back"
+                  src="images/im2.png"
+                  alt="First product alternative view"
+                >
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input
+                  class="favorite-input"
+                  type="checkbox"
+                  id="favorite-like1"
+                >
+
+                <label for="favorite-like1" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-care" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-care">Classic Leather Sneakers</a>
+            </h3>
+
+            <p class="price">
+              $79.99	
+              <del>$99.00</del>
+            </p>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-photo slide">
+              <div class="photo-inner">
+                <img
+                  class="photo-front"
+                  src="images/im3.png"
+                  alt="Second recommended product"
+                >
+
+                <img
+                  class="photo-back"
+                  src="images/im4.png"
+                  alt="Second product alternative view"
+                >
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input
+                  class="favorite-input"
+                  type="checkbox"
+                  id="favorite-like2"
+                >
+
+                <label for="favorite-like2" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-watch" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-watch">Classic Leather Watch</a>
+            </h3>
+
+            <p class="price">
+              $89.99
+              <del>$110.00</del>
+            </p>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-photo slide">
+              <div class="photo-inner">
+                <img
+                  class="photo-front"
+                  src="images/im5.png"
+                  alt="Third recommended product"
+                >
+
+                <img
+                  class="photo-back"
+                  src="images/im6.png"
+                  alt="Third product alternative view"
+                >
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input
+                  class="favorite-input"
+                  type="checkbox"
+                  id="favorite-like3"
+                >
+
+                <label for="favorite-like3" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-outfit" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-outfit">Classic Sunglasses</a>
+            </h3>
+
+            <p class="price">
+              $39.99	
+              <del>$55.00</del>
+            </p>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-photo slide">
+              <div class="photo-inner">
+                <img
+                  class="photo-front"
+                  src="images/im7.png"
+                  alt="Fourth recommended product"
+                >
+
+                <img
+                  class="photo-back"
+                  src="images/im8.png"
+                  alt="Fourth product alternative view"
+                >
+              </div>
+
+              <div class="product-actions">
+                <a href="#bag" aria-label="View shopping bag">
+                  <i class="fa-solid fa-cart-shopping icon"></i>
+                </a>
+
+                <input
+                  class="favorite-input"
+                  type="checkbox"
+                  id="favorite-like4"
+                >
+
+                <label for="favorite-like4" aria-label="Save product to wishlist">
+                  <i class="fa-regular fa-heart icon"></i>
+                </label>
+
+                <a href="#preview-beauty" aria-label="Enlarge product image">
+                  <i class="fa-solid fa-search-plus icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3>
+              <a href="#preview-beauty">Classic Leather Wallet</a>
+            </h3>
+
+            <p class="price">
+              $29.99	
+              <del>$40.00</del>
+            </p>
+          </article>
+
+        </div>
+      </section>
+      <!-- 8. Latest news -->
+      <section class="news" id="news">
+        <div class="container">
+          <h2>
+            Latest News
+          </h2>
+          <div class="news-grid">
+            <article class="news-card">
+              <a class="news-image" href="#article-1">
+                <img src="images/news-1.png" alt="Fashion and lifestyle inspiration">
+              </a>
+              <p class="news-category">
+                Style Guide
+              </p>
+              <h3>
+                <a href="#article-1">
+                  Simple Layers for Cooler Days
+                </a>
+              </h3>
+              <p class="news-description">
+                Pair a soft knit with your favourite overshirt for an easy, comfortable everyday look
+              </p>
+              <a class="read-more" href="#article-1">
+                Read More
+              </a>
+            </article>
+            <article class="news-card">
+              <a class="news-image" href="#article-2">
+                <img src="images/news-2.png" alt="Fashion and lifestyle inspiration">
+              </a>
+              <p class="news-category">
+                Everyday Essentials
+              </p>
+              <h3>
+                <a href="#article-2">
+                  Build an Outfit Around the Basics
+                </a>
+              </h3>
+              <p class="news-description">
+                A classic shirt, well-fitting trousers and clean trainers are a good place to start
+              </p>
+              <a class="read-more" href="#article-2">
+                Read More
+              </a>
+            </article>
+            <article class="news-card">
+              <a class="news-image" href="#article-3">
+                <img src="images/news-3.png" alt="Fashion and lifestyle inspiration">
+              </a>
+              <p class="news-category">
+                Clothing Care
+              </p>
+              <h3>
+                <a href="#article-3">
+                  Keep Your Favourite Pieces Looking New
+                </a>
+              </h3>
+              <p class="news-description">
+                Follow the care label, wash gently and store your clothes properly to help them last longer
+              </p>
+              <a class="read-more" href="#article-3">
+                Read More
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- 9. Service icons -->
+      <section class="container services" id="services" aria-label="Shopping benefits">
+        <article class="service">
+          <div class="service-icon">
+            <i class="fa-solid fa-truck-fast icon"></i>
+            <i class="fa-solid fa-truck-fast icon"></i>
+          </div>
+          <h3>
+            Fast & Free Delivery
+          </h3>
+          <p>
+            Free delivery on all orders
+          </p>
+        </article>
+        <article class="service">
+          <div class="service-icon">
+            <i class="fa-solid fa-credit-card icon"></i>
+            <i class="fa-solid fa-credit-card icon"></i>
+          </div>
+          <h3>
+            Secure Payment
+          </h3>
+          <p>
+            Safe and secure checkout
+          </p>
+        </article>
+        <article class="service">
+          <div class="service-icon">
+            <i class="fa-solid fa-money-bill icon"></i>
+            <i class="fa-solid fa-money-bill icon"></i>
+          </div>
+          <h3>
+            Money Back Guarantee
+          </h3>
+          <p>
+            Easy returns and refunds
+          </p>
+        </article>
+        <article class="service">
+          <div class="service-icon">
+            <i class="fa-solid fa-headset icon"></i>
+            <i class="fa-solid fa-headset icon"></i>
+          </div>
+          <h3>
+            Online Support
+          </h3>
+          <p>
+            Here to help with your order
+          </p>
+        </article>
+      </section>
+    </main>
+    <!-- 10. Newsletter and footer -->
+    <footer id="contact">
+      <div class="container">
+        <section class="newsletter" id="newsletter">
+          <div>
+            <h2>
+              Subscribe to Our Newsletter
+            </h2>
+            <p>
+              Get the latest arrivals and offers in your inbox
+            </p>
+          </div>
+          <form action="#newsletter" method="get">
+            <label class="screen-reader" for="email">
+              Your email address
+            </label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+          <div class="social-links footer-social">
+            <a href="#contact" aria-label="Facebook">
+              <i class="fa-brands fa-facebook icon"></i>
+            </a>
+            <a href="#contact" aria-label="Instagram">
+              <i class="fa-brands fa-instagram icon"></i>
+            </a>
+            <a href="#contact" aria-label="Youtube">
+              <i class="fa-brands fa-youtube icon" ></i>
+            </a>
+          </div>
+        </section>
+        <div class="footer-columns">
+          <a class="logo footer-logo" href="#home">
+            <span class="logo-mark">
+              <i class="fa-solid fa-shop icon"></i>
+            </span>
+            <span>
+              <strong>
+                Capital
+              </strong>
+              Shop
+            </span>
+          </a>
+          <nav aria-label="Shop Men">
+            <h3>
+              Shop Men
+            </h3>
+            <a href="#trending">
+              Clothing Fashion
+            </a>
+            <a href="#trending">
+              Winter
+            </a>
+            <a href="#trending">
+              Summer
+            </a>
+            <a href="#trending">
+              Formal
+            </a>
+            <a href="#trending">
+              Casual
+            </a>
+          </nav>
+          <nav aria-label="Shop Women">
+            <h3>
+              Shop Women
+            </h3>
+            <a href="#trending">
+              View Collection
+            </a>
+            <a href="#trending">
+              Winter
+            </a>
+            <a href="#trending">
+              Summer
+            </a>
+            <a href="#trending">
+              Formal
+            </a>
+            <a href="#trending">
+              Casual
+            </a>
+          </nav>
+          <nav aria-label="Baby Collection">
+            <h3>
+              Accessories
+            </h3>
+            <a href="#trending">
+              Clothing Fashion
+            </a>
+            <a href="#trending">
+              Bodysuits
+            </a>
+            <a href="#trending">
+              Knitwear
+            </a>
+            <a href="#trending">
+              Sets
+            </a>
+            <a href="#trending">
+              Sleepwear
+            </a>
+          </nav>
+          <nav aria-label="Quick Links">
+            <h3>
+              Quick Links
+            </h3>
+            <a href="#bag">
+              Track Your Order
+            </a>
+            <a href="#contact">
+              Support
+            </a>
+            <a href="#services">
+              FAQ
+            </a>
+            <a href="#news">
+              Careers
+            </a>
+            <a href="#about">
+              About
+            </a>
+            <a href="#newsletter">
+              Contact Us
+            </a>
+          </nav>
+        </div>
+        <p class="copyright">
+          Copyright © 2026 All rights reserved | This template is made with
+          <span>
+            ♥
+          </span>
+          by
+          <a href="#home">
+            Mohammad
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
